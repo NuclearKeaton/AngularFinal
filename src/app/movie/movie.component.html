@@ -1,0 +1,22 @@
+<div class="card-container">
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>{{movieTitle}}</th>
+          <th>Release Date</th>
+          <th>Picture</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let movie of movies">
+          <td>{{ movieUrl.title }}</td>
+          <td>{{ movieUrl.release_date }}</td>
+          <td><img [src]="movieUrl.poster_path" [alt]="movieUrl.overview"></td>
+          <td>{{ movieUrl.overview }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

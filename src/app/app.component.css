@@ -1,0 +1,12 @@
+.card
+{
+  width: 45%;
+}
+.card-1
+{
+  float: left;
+}
+.card-2
+{
+  float: right;
+}
